@@ -55,7 +55,7 @@ $(document).ready(function(){
 	});
 	//backgrounds for the champions
    		$('div#champ1').css({
-			'background' : 'url(../champions/<?php echo $champ_name; ?>.jpg) no-repeat center center fixed',
+			'background' : 'url(../champions/leesin.jpg) no-repeat center center fixed',
 			'background-position' : '50% 10%',
 			'-webkit-background-size' : 'cover',
 			'-moz-background-size' : 'cover',
