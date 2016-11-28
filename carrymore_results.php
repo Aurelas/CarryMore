@@ -10,15 +10,10 @@
 	<body>
 		<h1>Carrymore</h1>
 		<?php 
-			function clean($string) {
-			   	$stringA = str_replace('"', '', $string);
-		  	 	$stringB = str_replace("'", '', $stringA);
-			   	$stringC = strtolower($stringB);
-			   	$stringD = str_replace(" ", '', $stringC);
-			}
 
 			$champ_name = $_POST["champ"];
-			$cleaned_champ_name = $clean($champ_name);
+			$cleaned_champ_name = str_replace("'", "", $champ_name);
+			$lc_clean_name = strtolower($cleaned_champ_name);
 			//$path = '/var/www/html/carrymore/Main.py';
 			//$python = '/usr/bin/python2.7';
 			//$script = $python . " " . $path . " " . $champ_name;
@@ -30,7 +25,7 @@
 			<div class="col-1"></div>
 			<div class="col-2" id="champ1"><p>
 				<?php
-					//echo $cleaned_champ_name; 
+					echo $lc_clean_name; 
 				?></p>
 			</div>
 			<div class="col-2" id="champ2"></div>
