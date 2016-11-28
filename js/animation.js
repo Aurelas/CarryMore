@@ -53,4 +53,14 @@ $(document).ready(function(){
 			'border-bottom-width': 0,
 	    })
 	});
+	//backgrounds for the champions
+   		$('div#champ1').css({
+			'background' : 'url(../champions/<?php echo $champ_name; ?>.jpg) no-repeat center center fixed',
+			'background-position' : '50% 10%',
+			'-webkit-background-size' : 'cover',
+			'-moz-background-size' : 'cover',
+			'-o-background-size' : 'cover',
+			'background-size' : 'cover',
+			'transition-duration': '.3s' 
+	    });
 });
