@@ -36,93 +36,6 @@ button {
   transition-duration: .4s;
 }
 
-div.about, .about2
-{
-  display: block;
-  width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-div.middle
-{
-  width: 100%;
-  max-width: 830px;
-  margin: 50px auto;
-}
-
-div.name_wrapper
-{
-  display:block;
-}
-
-div#options
-{
-  text-align: center;
-  vertical-align: bottom;
-}
-
-div.player1, .player2, .player3, .player4, .player5
-{
-  display: block;
-  position: absolute;
-  height: 90px;
-  margin-bottom: 0px;
-  background-color: transparent;
-  width: 100%;
-  transition-duration: .4s;
-}
-
-div.readText 
-{
-  display: block;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 150px;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  vertical-align: bottom;
-  background-color: rgba(0,0,0,.7);
-  z-index: 1;
-}
-
-div.results
-{
-  width: 65%;
-  margin: auto;
-  background-color: #c1c1c1;
-}
-
-div.summoners
-{
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  height: 90px;
-  margin-bottom: 150px;
-  vertical-align: bottom;
-  padding: 0;
-  bottom: 0;
-  left: 0;
-}
-
-div#summ1, #summ2, #summ3, #summ4, #summ5
-{
-  display: inline-block;
-  width: 20%;
-  height: 100%;
-  margin: 0;
-  padding: auto;
-  text-align: center;
-  vertical-align: bottom;
-  background-color: transparent;
-  color: #DDDDDD;
-  z-index: 0;
-}
-
 h1 {
   font-family: 'Taviraj', serif;
   font-weight: 400;
@@ -139,20 +52,6 @@ h1 {
   text-align: center;
   color: #DDDDDD;
 }
-
-h2.error {
-  font-family: 'Taviraj', serif;
-  font-weight: 200;
-  display: block;
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0px;
-  width: auto;
-  text-align: center;
-  color: #888888;
-}
-
 
 h3
 {
@@ -288,27 +187,6 @@ p
   color: rgba(239, 236, 202, 1);
 }
 
-p.bot_text
-{
-  font-weight: bold;
-  margin: auto;
-  text-align: center;
-  line-height: 50px; 
-  color: #DDDDDD;
-}
-
-p.p1, .p2, .p3, .p4, .p5
-{
-  font-weight: bold;
-  font-size: 70px;
-  margin: 0;
-  color: rgba(0,0,0,0);
-  background-color: transparent;
-  transition-duration: .4s;
-}
-
-
-
 select
 {
   font-family: 'Taviraj', serif;
@@ -386,13 +264,13 @@ h3.fade2 {
   opacity: 0;
   margin-top: -35px;
   margin-left: -320px;
-  animation: fade2 ease 7s;
+  animation: fade2 ease 5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  -webkit-animation: fade2 ease 7s;
+  -webkit-animation: fade2 ease 5s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
-  -moz-animation: fade2 ease 7s;
+  -moz-animation: fade2 ease 5s;
   -moz-animation-iteration-count: infinite;
   -webkit-animation-delay: .25s; /* Safari 4.0 - 8.0 */
   animation-delay: .25s;
@@ -402,13 +280,13 @@ h3.fade3 {
   opacity: 0;
   margin-top: -23px;
   margin-right: -150px;
-  animation: fade2 ease 7s;
+  animation: fade2 ease 9s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  -webkit-animation: fade2 ease 7s;
+  -webkit-animation: fade2 ease 9s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
-  -moz-animation: fade2 ease 7s;
+  -moz-animation: fade2 ease 9s;
   -moz-animation-iteration-count: infinite;
   -webkit-animation-delay: .75s; /* Safari 4.0 - 8.0 */
   animation-delay: .75s;

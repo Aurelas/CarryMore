@@ -11,6 +11,6 @@ for x in range(132):
 	tree = html.fromstring(lolcounter.content)
 	role = tree.xpath('.//*[@id="leftcol"]/table/tbody/tr/td[7]/text()')
 	roleList.append([herolist[x], role[x]])
-f = open('champion_role_1.txt', 'w')
+f = open('champion_roles.txt', 'w')
 for item in roleList:
   f.write("%s\n" % item)
