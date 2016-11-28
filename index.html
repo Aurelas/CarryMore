@@ -1,50 +1,48 @@
 <html>
 	<head>
 	  <meta charset="utf-8">
-	  <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
-	  <link href='webpages/riot.css' rel='stylesheet' type='text/css'>
+	  <link href="https://fonts.googleapis.com/css?family=Taviraj:100,200,300,400,700" rel="stylesheet">
+	  <link href='css/styles.css' rel='stylesheet' type='text/css'>
 	  <title>Carrymore</title>
 		<script src="js/jquery.js"></script>
 		<script src="js/animation.js"></script>
 	</head>
 	<body>
 		<h1>Carrymore</h1>
-		<br>
-		<h3>Does your back hurt from carrying your garbage teammates?</h3>
-		<br>
-		<p>Welcome to Carrymore.  Here, you can tell us which champion you want to play, and we'll give you back a strong team of champions to support that champion, taking into account the current meta picks. We'll even return your probability of winning against an average team!</p>
-		<form action="./carrymore_results.php" method="post" id="green">
-			<input type="text" value="Summoner 1" name="sum1" class="box" id="s1"><br>
-			<input type="text" value="Summoner 2" name="sum2" class="box" id="s2"><br>
-			<input type="text" value="Summoner 3" name="sum3" class="box" id="s3"><br>
-			<input type="text" value="Summoner 4" name="sum4" class="box" id="s4"><br>
-			<input type="text" value="Summoner 5" name="sum5" class="box" id="s5"><br>
-			<div id="options">
-				<p style="width: 40%; margin: 5px auto">Pick your region and the champion you want to carry your trash, Cardboard-V team mates with.
-				</p>
-				<select name="region">
-					<option value="NA">NA</option>
-					<option value="BR">BR</option>
-					<option value="EUNE">EUNE</option>
-					<option value="EUW">EUW</option>
-					<option value="JP">JP</option>
-					<option value="KR">KR</option>
-					<option value="LAN">LAN</option>
-					<option value="LAS">LAS</option>
-					<option value="OCE">OCE</option>
-					<option value="TR">TR</option>
-					<option value="RU">RU</option>
-				</select>
-				<input class="box" id="champname" type="text" value="ex. Lee Sin" name="champname">
-			</div>
-
-			<input type="submit" value="Carry These Scrubs">
-			<p style="width: 40%;"> Enter any champion by their name: Lee Sin, Kha'Zix, tEeMo, leblanc(capitalization and punctuation don't matter!)</p>
-			<br>
-			<p> May take up to a minute to fetch the data, we crunchin some serious numbers fam </p>
-	    </form>
-	    <br>
-	    <br>
-	    <br>
+		<div class="col-2">
+		</div>
+		<div class="col-8">
+			<h3 class="fade1">Does your back hurt from carrying<br> your garbage teammates?</h3>
+			<h3 class="fade2">Are you sick of your Riven Top<br> ceaselessly feeding saying "wtf where team"?</h3>
+			<h3 class="fade3">Is the constant splitpushing of<br> your 1/8/2 Udyr frustrating you?</h3>
+			<h3 class="fade4"><em>we can't stop randoms from being trash, but we can help you figure out how to carry them.</em></h3>
+			<p>Welcome to Carrymore.  Here, you can tell us which champion you want to play, and we'll give you back a strong team of champions to support that champion, taking into account the current meta picks. We'll even return your probability of winning against an average team!</p>
+			<form action="./carrymore_results.php" method="post" id="green">
+				<input type="text" value="Carry Champion" name="champ" class="box" id="champ"><br>
+				<div id="options">
+					<p style="width: 40%; margin: 5px auto">Pick the champion you want to carry your trash, Cardboard-V team mates with.
+					</p>
+					<!-- incase we use the api for region specific data
+						<select name="region">
+							<option value="NA">NA</option>
+							<option value="BR">BR</option>
+							<option value="EUNE">EUNE</option>
+							<option value="EUW">EUW</option>
+							<option value="JP">JP</option>
+							<option value="KR">KR</option>
+							<option value="LAN">LAN</option>
+							<option value="LAS">LAS</option>
+							<option value="OCE">OCE</option>
+							<option value="TR">TR</option>
+							<option value="RU">RU</option>
+						</select>
+						<input class="box" id="champname" type="text" value="ex. Lee Sin" name="champname">
+					-->
+				</div>
+				<input type="submit" value="Carry These Scrubs">
+				<p> How to use: Enter any champion by their name: Lee Sin, Kha'Zix, tEeMo, leblanc(capitalization and punctuation don't matter!) adn hit carry these scrubs, then wait for the AI to compute a team for you.</p>
+		    </form>
+		</div>
+		<div class="col-2"></div>
 	</body>
 </html>
