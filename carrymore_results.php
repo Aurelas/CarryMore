@@ -18,17 +18,17 @@
 			}
 
 			$champ_name = $_POST["champ"];
-			$stringD = $clean($champ_name);
-			$path = '/var/www/html/carrymore/Main.py';
-			$python = '/usr/bin/python2.7';
-			$script = $python . " " . $path . " " . $champ_name;
+			$cleaned_champ_name = $clean($champ_name);
+			//$path = '/var/www/html/carrymore/Main.py';
+			//$python = '/usr/bin/python2.7';
+			//$script = $python . " " . $path . " " . $champ_name;
 
-			$results = exec($command, $my_output, $status);
+			//$results = exec($command, $my_output, $status);
 
-			$data_array = explode(",", $results);
+			//$data_array = explode(",", $results);
 		?>
 			<div class="col-1"></div>
-			<div class="col-2" id="champ1"><p><?php echo $champ_name ?></p></div>
+			<div class="col-2" id="champ1"><p><?php echo $cleaned_champ_name ?></p></div>
 			<div class="col-2" id="champ2"></div>
 			<div class="col-2" id="champ3"></div>
 			<div class="col-2" id="champ4"></div>
