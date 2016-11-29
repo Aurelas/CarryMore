@@ -206,10 +206,18 @@ select
 /* Champion pictures */
 
 #champ1, #champ2, #champ3, #champ4, #champ5 {
-  height: 508px;
-  width: 304px;
+  height: 560px;
+  width: 308px;
   display: block;
   margin: 5px 5px 5px 5px;
+}
+
+.tileName {
+  font-weight: 300;
+  color: rgba(147, 159, 92, 1);
+  position: absolute;
+  bottom: 4px;
+  text-align: center;
 }
 
 /*fading animations */

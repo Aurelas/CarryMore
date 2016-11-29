@@ -54,7 +54,7 @@ $(document).ready(function(){
 	    })
 	});
 	//backgrounds for the champions
-	champName = document.getElementById("champ1").innerHTML;
+	champName = document.getElementById("champ1").getAttribute("name");
 	champURL = "champions/" + champName + ".jpg";
 	$('div#champ1').css({
 		'background' : 'url(' + champURL +') no-repeat left top',
