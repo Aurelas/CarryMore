@@ -29,7 +29,7 @@
 					echo $lc_clean_name; 
 				?></p>
 			</div>
-			<div class="col-2" id="champ2" style="background: url('./champions/<?php echo $lc_clean_name ?>'"></div>
+			<div class="col-2" id="champ2"></div>
 			<div class="col-2" id="champ3"></div>
 			<div class="col-2" id="champ4"></div>
 			<div class="col-2" id="champ5"></div>
