@@ -12,7 +12,7 @@
 		<?php 
 
 			$champ_name = $_POST["champ"];
-			$ns_champ_name = str_replace(" ", "", $champ_name)
+			$ns_champ_name = str_replace(" ", "", $champ_name);
 			$cleaned_champ_name = str_replace("'", "", $ns_champ_name);
 			$lc_clean_name = strtolower($cleaned_champ_name);
 			//$path = '/var/www/html/carrymore/Main.py';
