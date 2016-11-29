@@ -24,10 +24,10 @@
 			//$data_array = explode(",", $results);
 		?>
 			<div class="col-1"></div>
-			<div class="col-2" id="champ1"><p>
+			<div class="col-2" id="champ1">
 				<?php
 					echo $lc_clean_name; 
-				?></p>
+				?>
 			</div>
 			<div class="col-2" id="champ2"></div>
 			<div class="col-2" id="champ3"></div>
