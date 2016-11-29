@@ -57,7 +57,7 @@ $(document).ready(function(){
 	champName = document.getElementById("champ1").innerHTML;
 	champURL = "champions/" + champName + ".jpg";
 	$('div#champ1').css({
-		'background' : 'url(' + champURL +') no-repeat center center fixed',
+		'background' : 'url(' + champURL +') no-repeat left top',
 		'transition-duration': '.5s' 
     });
 });
