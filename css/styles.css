@@ -218,8 +218,36 @@ select
   position: relative;
   bottom: 4px;
   text-align: center;
+  margin-top: 13px;
+  animation: colorShift1 ease 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation: colorShift1 ease 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation: colorShift1 ease 3s;
+  -moz-animation-iteration-count: infinite;
 }
 
+/* color animations */
+
+@keyframes colorShift1{
+  0% {
+    color: rgba(147, 159, 92, 1);
+  }
+  25% {
+    color: rgba(147, 159, 92, 1);
+  }
+  50% {
+    color: rgba(225, 170, 125, 1);
+  }
+  75% {
+    color: rgba(225, 170, 125, 1);
+  }
+  100% {
+    color: rgba(225, 170, 125, 1);
+  }
+}
 /*fading animations */
 
 
