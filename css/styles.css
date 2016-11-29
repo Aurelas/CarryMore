@@ -223,13 +223,13 @@ select
   margin-top: 0;
   padding: 0px 15px 0px 5px;
 
-  animation: colorShift1 ease 3s;
+  animation: colorShift1 ease 1.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  -webkit-animation: colorShift1 ease 3s;
+  -webkit-animation: colorShift1 ease 1.5s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
-  -moz-animation: colorShift1 ease 3s;
+  -moz-animation: colorShift1 ease 1.5s;
   -moz-animation-iteration-count: infinite;
 }
 
