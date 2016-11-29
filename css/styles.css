@@ -215,7 +215,7 @@ select
 .tileName {
   font-weight: 300;
   color: rgba(147, 159, 92, 1);
-  position: absolute;
+  position: relative;
   bottom: 4px;
   text-align: center;
 }
