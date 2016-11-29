@@ -203,7 +203,14 @@ select
   margin-right: 5px;
 }
 
+/* Champion pictures */
 
+#champ1, #champ2, #champ3, #champ4, #champ5 {
+  height: 508px;
+  width: 304px;
+  display: block;
+  margin: 5px 5px 5px 5px;
+}
 
 /*fading animations */
 
