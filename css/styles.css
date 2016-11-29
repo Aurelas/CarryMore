@@ -214,6 +214,7 @@ select
 
 .tileName {
   font-weight: 300;
+  font-size: 32px;
   color: rgba(147, 159, 92, 1);
   position: relative;
   bottom: 4px;
@@ -235,13 +236,10 @@ select
   0% {
     color: rgba(147, 159, 92, 1);
   }
-  25% {
+  33% {
     color: rgba(147, 159, 92, 1);
   }
-  50% {
-    color: rgba(225, 170, 125, 1);
-  }
-  75% {
+  66% {
     color: rgba(225, 170, 125, 1);
   }
   100% {
