@@ -16,6 +16,6 @@ for x in range(133):
 	weakStrongList = [weakList, strongList]
 	championList.append([herolist[x], weakList, strongList])
 	champNames.append(championList[x][0])
-f = open('champion_list.txt', 'w')
-for item in champNames:
+f = open('champion_counters.txt', 'w')
+for item in championList:
   f.write("%s\n" % item)
