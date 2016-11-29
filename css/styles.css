@@ -216,10 +216,13 @@ select
   font-weight: 300;
   font-size: 32px;
   color: rgba(147, 159, 92, 1);
+  background: rgba(0, 0, 0, .25);
   position: relative;
   bottom: 4px;
   text-align: center;
-  margin-top: 13px;
+  margin-top: 0;
+  padding: 0px 15px 0px 5px;
+
   animation: colorShift1 ease 3s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
