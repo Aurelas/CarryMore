@@ -11,10 +11,11 @@ for x in range(133):
 	tree = html.fromstring(lolcounter.content)
 	weakAgainst = tree.xpath('//div[@id="weakAgainst"]//a//h4/text()')
 	strongAgainst = tree.xpath('//div[@id="strongAgainst"]//a//h4/text()')
+	goodWith = tree.xpath('//div[@id="goodWith"]//a//h4/text()')
 	weakList = list(set(weakAgainst))
 	strongList = list(set(strongAgainst))
-	weakStrongList = [weakList, strongList]
-	championList.append([herolist[x], weakList, strongList])
+	goodList = list(set(strongAgainst))
+	championList.append([herolist[x], weakList, strongList, goodList])
 	champNames.append(championList[x][0])
 f = open('champion_counters.txt', 'w')
 for item in championList:
