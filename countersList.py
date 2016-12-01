@@ -14,7 +14,7 @@ for x in range(133):
 	goodWith = tree.xpath('//div[@id="goodWith"]//a//h4/text()')
 	weakList = list(set(weakAgainst))
 	strongList = list(set(strongAgainst))
-	goodList = list(set(strongAgainst))
+	goodList = list(set(goodWith))
 	championList.append([herolist[x], weakList, strongList, goodList])
 	champNames.append(championList[x][0])
 f = open('champion_counters.txt', 'w')
