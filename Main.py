@@ -91,11 +91,11 @@ def main():
     ################################################################
     # THIS OUTPUTS THE TOP 5 CHOICES FOR EACH AI (ROLE)
     ################################################################
-    print game.get_role_from_champion(user_champ), ",", user_champ
+    print game.get_role_from_champion(user_champ), ",", user_champ,
     for i in game.ai:
         t = sorted(i.qValues.iteritems(), key=lambda x: -x[1])[:1]
         for x,y in t:
-            print game.get_role_from_champion(x),",", x #,",", y
+            print ",", game.get_role_from_champion(x),",", x, #,",", y
     
 
 
