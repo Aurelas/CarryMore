@@ -54,10 +54,38 @@ $(document).ready(function(){
 	    })
 	});
 	//backgrounds for the champions
-	champName = document.getElementById("champ1").getAttribute("name");
-	champURL = "champions/" + champName + ".jpg";
+	champ1Name = document.getElementById("champ1").getAttribute("name");
+	champ1URL = "champions/" + champ1Name + ".jpg";
 	$('div#champ1').css({
-		'background' : 'url(' + champURL +') no-repeat left top',
+		'background' : 'url(' + champ2URL +') no-repeat left top',
+		'transition-duration': '.5s' 
+    });
+
+	champ2Name = document.getElementById("champ2").getAttribute("name");
+	champ2URL = "champions/" + champ2Name + ".jpg";
+	$('div#champ2').css({
+		'background' : 'url(' + champ2URL +') no-repeat left top',
+		'transition-duration': '.5s' 
+    });
+
+	champ3Name = document.getElementById("champ2").getAttribute("name");
+	champ3URL = "champions/" + champ3Name + ".jpg";
+	$('div#champ3').css({
+		'background' : 'url(' + champ3URL +') no-repeat left top',
+		'transition-duration': '.5s' 
+    });
+
+	champ4Name = document.getElementById("champ1").getAttribute("name");
+	champ4URL = "champions/" + champ4Name + ".jpg";
+	$('div#champ4').css({
+		'background' : 'url(' + champ4URL +') no-repeat left top',
+		'transition-duration': '.5s' 
+    });
+
+	champ5Name = document.getElementById("champ1").getAttribute("name");
+	champ5URL = "champions/" + champ5Name + ".jpg";
+	$('div#champ5').css({
+		'background' : 'url(' + champ5URL +') no-repeat left top',
 		'transition-duration': '.5s' 
     });
 });
