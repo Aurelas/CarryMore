@@ -68,21 +68,21 @@ $(document).ready(function(){
 		'transition-duration': '.5s' 
     });
 
-	champ3Name = document.getElementById("champ2").getAttribute("name");
+	champ3Name = document.getElementById("champ3").getAttribute("name");
 	champ3URL = "champions/" + champ3Name + ".jpg";
 	$('div#champ3').css({
 		'background' : 'url(' + champ3URL +') no-repeat left top',
 		'transition-duration': '.5s' 
     });
 
-	champ4Name = document.getElementById("champ1").getAttribute("name");
+	champ4Name = document.getElementById("champ4").getAttribute("name");
 	champ4URL = "champions/" + champ4Name + ".jpg";
 	$('div#champ4').css({
 		'background' : 'url(' + champ4URL +') no-repeat left top',
 		'transition-duration': '.5s' 
     });
 
-	champ5Name = document.getElementById("champ1").getAttribute("name");
+	champ5Name = document.getElementById("champ5").getAttribute("name");
 	champ5URL = "champions/" + champ5Name + ".jpg";
 	$('div#champ5').css({
 		'background' : 'url(' + champ5URL +') no-repeat left top',
