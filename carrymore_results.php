@@ -21,14 +21,12 @@
 			$results = exec($command, $my_output, $status);
 			$data_array = explode(" , ", $results);
 
-			$user_role = $data_array[0];
-			$user_champ = $data_array[1];
 
 			$champ_name = $data_array;
 		?>
 		<div class="outer">
 			<div class="inner">
-				<div class="col-1" id="champ1" name="<?php echo $user_champ; ?>"><p class="tileName"><?php echo ucwords($champ_name[1]; ?></p><p class="tileRole"><?php echo $user_role; ?></p>
+				<div class="col-1" id="champ1" name="<?php echo $data_array[1]; ?>"><p class="tileName"><?php echo ucwords($champ_name[1]; ?></p><p class="tileRole"><?php echo $user_role; ?></p>
 				</div>
 				<div class="col-1" id="champ2" name="<?php echo $data_array[3]; ?>"><p class="tileName"><?php echo ucwords($champ_name[3]); ?></p><p class="tileRole"><?php echo $data_array[2]; ?></p>
 				</div>
