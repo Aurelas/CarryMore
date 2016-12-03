@@ -265,7 +265,7 @@ select
   left: -50%;
 }
 
-#inner {
+.inner {
   position: relative;
   left: 50%;  
   margin: 0;
