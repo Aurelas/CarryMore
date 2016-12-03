@@ -14,7 +14,7 @@
 			$s_champ_name = str_replace(" ", "", $champ_name);
 			$sq_champ_name = str_replace("'", "", $s_champ_name);
 			$sqp_champ_name = str_replace(".", "", $sq_champ_name);
-			$clean = strtolower($sqp_clean_name);
+			$clean = strtolower($sqp_champ_name);
 			$path = '/var/www/html/carrymore/Main.py';
 			$python = '/usr/bin/python';
 			$script = $python . " " . $path . " " . $clean;
