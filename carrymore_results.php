@@ -11,15 +11,12 @@
 		<h1>Carrymore</h1>
 		<?php 
 			$champ_name = $_POST["champ"];
-			function clean_name($string){
-				$string = str_replace(" ", "", $string);
-				$string = str_replace("'", "", $string);
-				$string = strtolower($string);
-			}
-			$clean_name = clean_name($champ_name);
+			$ns_champ_name = str_replace(" ", "", $champ_name);
+			$cleaned_champ_name = str_replace("'", "", $ns_champ_name);
+			$lc_clean_name = strtolower($cleaned_champ_name);
 			$path = '/var/www/html/carrymore/Main.py';
 			$python = '/usr/bin/python';
-			$script = $python . " " . $path . " " . $clean_name;
+			$script = $python . " " . $path . " " . $champ_name;
 			$command = escapeshellcmd($script);
 			$results = exec($command, $my_output, $status);
 			$data_array = explode(" , ", $results);
