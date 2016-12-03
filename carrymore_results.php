@@ -20,7 +20,7 @@
 			$script = $python . " " . $path . " " . $champ_name;
 			$command = escapeshellcmd($script);
 			$results = exec($command, $my_output, $status);
-			$data_array = explode(",", $results);
+			$data_array = explode(" , ", $results);
 
 			$user_role = $data_array[0];
 			$user_champ = $data_array[1];
