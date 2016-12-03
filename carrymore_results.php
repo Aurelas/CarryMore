@@ -15,24 +15,58 @@
 			$ns_champ_name = str_replace(" ", "", $champ_name);
 			$cleaned_champ_name = str_replace("'", "", $ns_champ_name);
 			$lc_clean_name = strtolower($cleaned_champ_name);
-			//$path = '/var/www/html/carrymore/Main.py';
-			//$python = '/usr/bin/python2.7';
-			//$script = $python . " " . $path . " " . $champ_name;
+			$path = '/var/www/html/carrymore/Main.py';
+			$python = '/usr/bin/python';
+			$script = $python . " " . $path . " " . $champ_name;
+			$command = escapeshellcmd($script);
+			$results = exec($command, $my_output, $status);
+			$data_array = explode(",", $results);
 
-			//$results = exec($command, $my_output, $status);
+			$user_role = $data_array[0];
+			$user_champ = $data_array[1];
 
-			//$data_array = explode(",", $results);
 		?>
 			<div class="col-1"></div>
-			<div class="col-2" id="champ1" name="<?php echo $lc_clean_name; ?>">
+			<div class="col-2" id="champ1" name="<?php echo $user_champ; ?>">
 				<p class="tileName">
-					<?php echo $lc_clean_name; ?>
+					<?php echo $user_champ; ?>
+				</p>
+				<p class="tileRole">
+					<?php echo $user_role; ?>
 				</p>
 			</div>
-			<div class="col-2" id="champ2"></div>
-			<div class="col-2" id="champ3"></div>
-			<div class="col-2" id="champ4"></div>
-			<div class="col-2" id="champ5"></div>
+			<div class="col-2" id="champ2">
+			<p class="tileName">
+					<?php echo $data_array[3]; ?>
+				</p>
+				<p class="tileRole">
+					<?php echo $data_array[2]; ?>
+				</p>
+			</div>
+			<div class="col-2" id="champ3">
+			<p class="tileName">
+					<?php echo $data_array[5]; ?>
+				</p>
+				<p class="tileRole">
+					<?php echo $data_array[4]; ?>
+				</p>
+			</div>
+			<div class="col-2" id="champ4">
+			<p class="tileName">
+					<?php echo $data_array[7]; ?>
+				</p>
+				<p class="tileRole">
+					<?php echo $data_array[6]; ?>
+				</p>
+			</div>
+			<div class="col-2" id="champ5">
+			<p class="tileName">
+					<?php echo $data_array[9]; ?>
+				</p>
+				<p class="tileRole">
+					<?php echo $data_array[8]; ?>
+				</p>
+			</div>
 			<div class="col-1"></div>
 	</body>
 </html>

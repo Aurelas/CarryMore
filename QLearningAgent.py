@@ -5,7 +5,7 @@ class QLearningAgent(object):
 
     def __init__(self,champion_role_list):
         self.qValues = {}
-        self.epsilon = .5
+        self.epsilon = .98
         self.alpha = .5
         for i in champion_role_list:
             self.qValues[i] = 1
@@ -52,7 +52,7 @@ class QLearningAgent(object):
         reward = 0
         for i in Gamestate.get_champions_picked():
             if action in Gamestate.champion_synergies[i]:
-                reward += 1.5
+                reward += 1.3
             else:
                 reward += .9
         return reward
@@ -61,7 +61,7 @@ class QLearningAgent(object):
         reward = 0
         userChoice = Gamestate.get_champions_picked()[0]
         if action in Gamestate.champion_synergies[userChoice]:
-            reward += 1.5
+            reward += 1.3
         else:
             reward += .9
 

@@ -233,6 +233,29 @@ select
   -moz-animation-iteration-count: infinite;
 }
 
+.tileRole {
+  width: 100%;
+  height: 25px;
+  font-weight: 300;
+  font-size: 32px;
+  color: rgba(147, 159, 92, 1);
+  background: rgba(0, 0, 0, .25);
+  position: relative;
+  bottom: 4px;
+  text-align: center;
+  margin-top: 0;
+  padding: 0px 15px 0px 5px;
+
+  animation: colorShift1 ease 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation: colorShift1 ease 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation: colorShift1 ease 1.5s;
+  -moz-animation-iteration-count: infinite;
+}
+
 /* color animations */
 
 @keyframes colorShift1{
