@@ -22,19 +22,19 @@
 			$data_array = explode(" , ", $results);
 
 
-			$champ_name = $data_array;
+			$champions = $data_array;
 		?>
 		<div class="outer">
 			<div class="inner">
-				<div class="col-1" id="champ1" name="<?php echo $data_array[1]; ?>"><p class="tileName"><?php echo ucwords($champ_name[1]; ?></p><p class="tileRole"><?php echo $user_role; ?></p>
+				<div class="col-1" id="champ1" name="<?php echo $data_array[1]; ?>"><p class="tileName"><?php echo ucwords($champions[1]; ?></p><p class="tileRole"><?php echo $user_role; ?></p>
 				</div>
-				<div class="col-1" id="champ2" name="<?php echo $data_array[3]; ?>"><p class="tileName"><?php echo ucwords($champ_name[3]); ?></p><p class="tileRole"><?php echo $data_array[2]; ?></p>
+				<div class="col-1" id="champ2" name="<?php echo $data_array[3]; ?>"><p class="tileName"><?php echo ucwords($champions[3]); ?></p><p class="tileRole"><?php echo $data_array[2]; ?></p>
 				</div>
-				<div class="col-1" id="champ3" name="<?php echo $data_array[5]; ?>"><p class="tileName"><?php echo ucwords($champ_name[5]); ?></p><p class="tileRole"><?php echo $data_array[4]; ?></p>
+				<div class="col-1" id="champ3" name="<?php echo $data_array[5]; ?>"><p class="tileName"><?php echo ucwords($champions[5]); ?></p><p class="tileRole"><?php echo $data_array[4]; ?></p>
 				</div>
-				<div class="col-1" id="champ4" name="<?php echo $data_array[7]; ?>"><p class="tileName"><?php echo ucwords($champ_name[7]); ?></p><p class="tileRole"><?php echo $data_array[6]; ?></p>
+				<div class="col-1" id="champ4" name="<?php echo $data_array[7]; ?>"><p class="tileName"><?php echo ucwords($champions[7]); ?></p><p class="tileRole"><?php echo $data_array[6]; ?></p>
 				</div>
-				<div class="col-1" id="champ5" name="<?php echo $data_array[9]; ?>"><p class="tileName"><?php echo ucwords($champ_name[9]); ?></p><p class="tileRole"><?php echo $data_array[8]; ?></p>
+				<div class="col-1" id="champ5" name="<?php echo $data_array[9]; ?>"><p class="tileName"><?php echo ucwords($champions[9]); ?></p><p class="tileRole"><?php echo $data_array[8]; ?></p>
 				</div>
 			</div>
 		</div>
