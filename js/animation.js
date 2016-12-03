@@ -59,7 +59,7 @@ $(document).ready(function(){
 	$('div#champ1').css({
 		'background' : 'url(' + champ1URL +') no-repeat left top',
 		'transition-duration': '.5s',
-		'background-size' : '75%'
+		'background-size' : '100%'
     });
 
 	champ2Name = document.getElementById("champ2").getAttribute("name");
@@ -67,7 +67,7 @@ $(document).ready(function(){
 	$('div#champ2').css({
 		'background' : 'url(' + champ2URL +') no-repeat left top',
 		'transition-duration': '.5s',
-		'background-size' : '75%'
+		'background-size' : '100%'
     });
 
 	champ3Name = document.getElementById("champ3").getAttribute("name");
@@ -75,7 +75,7 @@ $(document).ready(function(){
 	$('div#champ3').css({
 		'background' : 'url(' + champ3URL +') no-repeat left top',
 		'transition-duration': '.5s',
-		'background-size' : '75%' 
+		'background-size' : '100%' 
     });
 
 	champ4Name = document.getElementById("champ4").getAttribute("name");
@@ -83,7 +83,7 @@ $(document).ready(function(){
 	$('div#champ4').css({
 		'background' : 'url(' + champ4URL +') no-repeat left top',
 		'transition-duration': '.5s',
-		'background-size' : '75%' 
+		'background-size' : '100%' 
     });
 
 	champ5Name = document.getElementById("champ5").getAttribute("name");
@@ -91,6 +91,6 @@ $(document).ready(function(){
 	$('div#champ5').css({
 		'background' : 'url(' + champ5URL +') no-repeat left top',
 		'transition-duration': '.5s',
-		'background-size' : '75%' 
+		'background-size' : '100%' 
     });
 });
