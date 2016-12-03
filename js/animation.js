@@ -58,34 +58,39 @@ $(document).ready(function(){
 	champ1URL = "champions/" + champ1Name + ".jpg";
 	$('div#champ1').css({
 		'background' : 'url(' + champ1URL +') no-repeat left top',
-		'transition-duration': '.5s' 
+		'transition-duration': '.5s',
+		'background-size' : '75%'
     });
 
 	champ2Name = document.getElementById("champ2").getAttribute("name");
 	champ2URL = "champions/" + champ2Name + ".jpg";
 	$('div#champ2').css({
 		'background' : 'url(' + champ2URL +') no-repeat left top',
-		'transition-duration': '.5s' 
+		'transition-duration': '.5s',
+		'background-size' : '75%'
     });
 
 	champ3Name = document.getElementById("champ3").getAttribute("name");
 	champ3URL = "champions/" + champ3Name + ".jpg";
 	$('div#champ3').css({
 		'background' : 'url(' + champ3URL +') no-repeat left top',
-		'transition-duration': '.5s' 
+		'transition-duration': '.5s',
+		'background-size' : '75%' 
     });
 
 	champ4Name = document.getElementById("champ4").getAttribute("name");
 	champ4URL = "champions/" + champ4Name + ".jpg";
 	$('div#champ4').css({
 		'background' : 'url(' + champ4URL +') no-repeat left top',
-		'transition-duration': '.5s' 
+		'transition-duration': '.5s',
+		'background-size' : '75%' 
     });
 
 	champ5Name = document.getElementById("champ5").getAttribute("name");
 	champ5URL = "champions/" + champ5Name + ".jpg";
 	$('div#champ5').css({
 		'background' : 'url(' + champ5URL +') no-repeat left top',
-		'transition-duration': '.5s' 
+		'transition-duration': '.5s',
+		'background-size' : '75%' 
     });
 });
