@@ -216,17 +216,16 @@ select
 
 .tileName {
   width: 100%;
-  height: 40px;
+  height: 50px;
   font-weight: 300;
-  font-size: 32px;
+  font-size: 28px;
   color: rgba(147, 159, 92, 1);
   background: rgba(0, 0, 0, .7);
   position: absolute;
-  top: 0px;
+  bottom: 50px;
   text-align: center;
-  margin: 0;
+  margin: 0px;
   padding: 10px 0px 10px 0px;
-
   animation: colorShift1 ease 1.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -239,17 +238,16 @@ select
 
 .tileRole {
   width: 100%;
-  height: 40px;
+  height: 50px;
   font-weight: 300;
-  font-size: 32px;
+  font-size: 22px;
   color: rgba(147, 159, 92, 1);
   background: rgba(0, 0, 0, .7);
   position: absolute;
   bottom: 0px;
   text-align: center;
-  margin: 0;
+  margin: 0px;
   padding: 10px 0px 10px 0px;
-
   animation: colorShift1 ease 1.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
