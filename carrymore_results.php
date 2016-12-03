@@ -25,25 +25,15 @@
 			$user_champ = $data_array[1];
 
 		?>
-		<div class="col-1" id="champ1" name="<?php echo $user_champ; ?>">
-			<p class="tileName"><?php echo $user_champ; ?></p>
-			<p class="tileRole"><?php echo $user_role; ?></p>
+		<div class="col-1" id="champ1" name="<?php echo $user_champ; ?>"><p class="tileName"><?php echo $user_champ; ?></p><p class="tileRole"><?php echo $user_role; ?></p>
 		</div>
-		<div class="col-1" id="champ2" name="<?php echo $data_array[3]; ?>">
-		<p class="tileName"><?php echo $data_array[3]; ?></p>
-			<p class="tileRole"><?php echo $data_array[2]; ?></p>
+		<div class="col-1" id="champ2" name="<?php echo $data_array[3]; ?>"><p class="tileName"><?php echo $data_array[3]; ?></p><p class="tileRole"><?php echo $data_array[2]; ?></p>
 		</div>
-		<div class="col-1" id="champ3" name="<?php echo $data_array[5]; ?>">
-		<p class="tileName"><?php echo $data_array[5]; ?></p>
-			<p class="tileRole"><?php echo $data_array[4]; ?></p>
+		<div class="col-1" id="champ3" name="<?php echo $data_array[5]; ?>"><p class="tileName"><?php echo $data_array[5]; ?></p><p class="tileRole"><?php echo $data_array[4]; ?></p>
 		</div>
-		<div class="col-1" id="champ4" name="<?php echo $data_array[7]; ?>">
-		<p class="tileName"><?php echo $data_array[7]; ?></p>
-			<p class="tileRole"><?php echo $data_array[6]; ?></p>
+		<div class="col-1" id="champ4" name="<?php echo $data_array[7]; ?>"><p class="tileName"><?php echo $data_array[7]; ?></p><p class="tileRole"><?php echo $data_array[6]; ?></p>
 		</div>
-		<div class="col-1" id="champ5" name="<?php echo $data_array[9]; ?>">
-		<p class="tileName"><?php echo $data_array[9]; ?></p>
-			<p class="tileRole"><?php echo $data_array[8]; ?></p>
+		<div class="col-1" id="champ5" name="<?php echo $data_array[9]; ?>"><p class="tileName"><?php echo $data_array[9]; ?></p><p class="tileRole"><?php echo $data_array[8]; ?></p>
 		</div>
 	</body>
 </html>
