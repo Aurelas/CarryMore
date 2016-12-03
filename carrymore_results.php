@@ -30,56 +30,8 @@
 			$champ_name[3] = $data_array[7];
 			$champ_name[4] = $data_array[9];
 
-			for ($i = 0; $i <= 4; $i++) {
-				switch ($champ_name[i]) {
-					case "aurelionsol":
-						$champ_name[i] = "Aurelion Sol";
-						break;
-					case "chogath":
-						$champ_name[i] = "Cho'Gath";
-						break;
-					case "drmundo":
-						$champ_name[i] = "Dr. Mundo";
-						break;
-					case "jarvaniv":
-						$champ_name[i] = "Jarvan IV";
-						break;
-					case "khazix":
-						$champ_name[i] = "Kha'Zix";
-						break;
-					case "kogmaw":
-						$champ_name[i] = "Kog'Maw";
-						break;
-					case "leesin":
-						$champ_name[i] = "Lee Sin";
-						break;
-					case "masteryi":
-						$champ_name[i] = "Master Yi";
-						break;
-					case "missfortune":
-						$champ_name[i] = "Miss Fortune";
-						break;
-					case "reksai":
-						$champ_name[i] = "Rek'Sai";
-						break;
-					case "aurelionsol":
-						$champ_name[i] = "Aurelion Sol";
-						break;
-					case "tahmkench":
-						$champ_name[i] = "Tahm Kench";
-						break;
-					case "twistedfate":
-						$champ_name[i] = "Twisted Fate";
-						break;
-					case "velkoz":
-						$champ_name[i] = "Vel'Koz";
-						break;
-					case "xinzhao":
-						$champ_name[i] = "Xin Zhao";
-						break;
-				}
-			}
-			$c1 = ucfirst($champ_name[0]);
+
+		$c1 = ucfirst($champ_name[0]);
 		?>
 		<div class="outer">
 			<div class="inner">
