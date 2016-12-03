@@ -22,6 +22,57 @@
 			$results = exec($command, $my_output, $status);
 			$data_array = explode(" , ", $results);
 			$champions = $data_array;
+			for ($i = 0; $i <= 4; $i++) {
+				switch ($champions[i]) {
+					case "aurelionsol":
+						$champions[i] = "Aurelion Sol";
+						break;
+					case "chogath":
+						$champions[i] = "Cho'Gath";
+						break;
+					case "drmundo":
+						$champions[i] = "Dr. Mundo";
+						break;
+					case "jarvaniv":
+						$champions[i] = "Jarvan IV";
+						break;
+					case "khazix":
+						$champions[i] = "Kha'Zix";
+						break;
+					case "kogmaw":
+						$champions[i] = "Kog'Maw";
+						break;
+					case "leesin":
+						$champions[i] = "Lee Sin";
+						break;
+					case "masteryi":
+						$champions[i] = "Master Yi";
+						break;
+					case "missfortune":
+						$champions[i] = "Miss Fortune";
+						break;
+					case "reksai":
+						$champions[i] = "Rek'Sai";
+						break;
+					case "aurelionsol":
+						$champions[i] = "Aurelion Sol";
+						break;
+					case "tahmkench":
+						$champions[i] = "Tahm Kench";
+						break;
+					case "twistedfate":
+						$champions[i] = "Twisted Fate";
+						break;
+					case "velkoz":
+						$champions[i] = "Vel'Koz";
+						break;
+					case "xinzhao":
+						$champions[i] = "Xin Zhao";
+						break;
+					default:
+						
+				}
+			}
 		?>
 		<div class="outer">
 			<div class="inner">
