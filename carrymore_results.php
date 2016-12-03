@@ -70,7 +70,7 @@
 						$champions[i] = "Xin Zhao";
 						break;
 					default:
-						
+						$placeholder = 1;
 				}
 			}
 		?>
