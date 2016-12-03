@@ -206,10 +206,11 @@ select
 /* Champion pictures */
 
 #champ1, #champ2, #champ3, #champ4, #champ5 {
-  height: 560px;
-  width: 308px;
+  height: 455px;
+  width: 250px;
   display: block;
   margin: 5px 5px 5px 5px;
+  padding: 0px;
   position: relative;
 }
 
