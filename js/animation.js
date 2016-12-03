@@ -57,7 +57,7 @@ $(document).ready(function(){
 	champ1Name = document.getElementById("champ1").getAttribute("name");
 	champ1URL = "champions/" + champ1Name + ".jpg";
 	$('div#champ1').css({
-		'background' : 'url(' + champ2URL +') no-repeat left top',
+		'background' : 'url(' + champ1URL +') no-repeat left top',
 		'transition-duration': '.5s' 
     });
 
