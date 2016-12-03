@@ -85,9 +85,9 @@
 			<div class="inner">
 				<div class="col-1" id="champ1" name="<?php echo $user_champ; ?>"><p class="tileName"><?php echo $c1; ?></p><p class="tileRole"><?php echo $user_role; ?></p>
 				</div>
-				<div class="col-1" id="champ2" name="<?php echo $data_array[3]; ?>"><p class="tileName"><?php echo ucfirst($champ_name[1]); ?></p><p class="tileRole"><?php echo $data_array[2]; ?></p>
+				<div class="col-1" id="champ2" name="<?php echo $data_array[3]; ?>"><p class="tileName"><?php echo ucwords($champ_name[1]); ?></p><p class="tileRole"><?php echo $data_array[2]; ?></p>
 				</div>
-				<div class="col-1" id="champ3" name="<?php echo $data_array[5]; ?>"><p class="tileName"><?php echo ucfirst($champ_name[2]); ?></p><p class="tileRole"><?php echo $data_array[4]; ?></p>
+				<div class="col-1" id="champ3" name="<?php echo $data_array[5]; ?>"><p class="tileName"><?php echo ucwords($champ_name[2]); ?></p><p class="tileRole"><?php echo $data_array[4]; ?></p>
 				</div>
 				<div class="col-1" id="champ4" name="<?php echo $data_array[7]; ?>"><p class="tileName"><?php echo ucfirst($champ_name[3]); ?></p><p class="tileRole"><?php echo $data_array[6]; ?></p>
 				</div>
