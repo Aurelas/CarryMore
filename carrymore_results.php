@@ -10,7 +10,8 @@
 	<body>
 		<h1>Carrymore</h1>
 		<?php 
-			$s_champ_name = str_replace(" ", "", $_POST["champ"]);
+			$champ_name = $_POST["champ"];
+			$s_champ_name = str_replace(" ", "", $champ_name);
 			$sq_champ_name = str_replace("'", "", $s_champ_name);
 			$sqp_champ_name = str_replace(".", "", $sq_champ_name);
 			$clean = strtolower($sqp_clean_name);
