@@ -35,7 +35,7 @@
 					<?php echo $user_role; ?>
 				</p>
 			</div>
-			<div class="col-2" id="champ2">
+			<div class="col-2" id="champ2" name="<?php echo $data_array[3]; ?>">
 			<p class="tileName">
 					<?php echo $data_array[3]; ?>
 				</p>
@@ -43,7 +43,7 @@
 					<?php echo $data_array[2]; ?>
 				</p>
 			</div>
-			<div class="col-2" id="champ3">
+			<div class="col-2" id="champ3" name="<?php echo $data_array[5]; ?>">
 			<p class="tileName">
 					<?php echo $data_array[5]; ?>
 				</p>
@@ -51,7 +51,7 @@
 					<?php echo $data_array[4]; ?>
 				</p>
 			</div>
-			<div class="col-2" id="champ4">
+			<div class="col-2" id="champ4" name="<?php echo $data_array[7]; ?>">
 			<p class="tileName">
 					<?php echo $data_array[7]; ?>
 				</p>
@@ -59,7 +59,7 @@
 					<?php echo $data_array[6]; ?>
 				</p>
 			</div>
-			<div class="col-2" id="champ5">
+			<div class="col-2" id="champ5" name="<?php echo $data_array[9]; ?>">
 			<p class="tileName">
 					<?php echo $data_array[9]; ?>
 				</p>
