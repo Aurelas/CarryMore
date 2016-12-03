@@ -220,11 +220,11 @@ select
   font-size: 32px;
   color: rgba(147, 159, 92, 1);
   background: rgba(0, 0, 0, .6);
-  position: relative;
-  bottom: 0px;
+  position: absolute;
+  top: 0px;
   text-align: center;
-  margin-top: 0;
-  padding: 0px 15px 0px 5px;
+  margin: 0;
+  padding: 10px 0px 10px 0px;
 
   animation: colorShift1 ease 1.5s;
   animation-iteration-count: infinite;
@@ -243,11 +243,11 @@ select
   font-size: 32px;
   color: rgba(147, 159, 92, 1);
   background: rgba(0, 0, 0, .25);
-  position: relative;
+  position: absolute;
   bottom: 0px;
   text-align: center;
-  margin-top: 0;
-  padding: 0px 15px 0px 5px;
+  margin: 0;
+  padding: 10px 0px 10px 0px;
 
   animation: colorShift1 ease 1.5s;
   animation-iteration-count: infinite;
