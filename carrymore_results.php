@@ -26,7 +26,7 @@
 		?>
 		<div class="outer">
 			<div class="inner">
-				<div class="col-1" id="champ1" name="<?php echo $data_array[1]; ?>"><p class="tileName"><?php echo ucwords($champions[1]); ?></p><p class="tileRole"><?php echo $user_role; ?></p>
+				<div class="col-1" id="champ1" name="<?php echo $data_array[1]; ?>"><p class="tileName"><?php echo ucwords($champions[1]); ?></p><p class="tileRole"><?php echo $data_array[0]; ?></p>
 				</div>
 				<div class="col-1" id="champ2" name="<?php echo $data_array[3]; ?>"><p class="tileName"><?php echo ucwords($champions[3]); ?></p><p class="tileRole"><?php echo $data_array[2]; ?></p>
 				</div>
