@@ -23,54 +23,53 @@
 			$data_array = explode(" , ", $results);
 			$champions = $data_array;
 			for ($i = 0; $i <= 4; $i++) {
-				switch ($champions[i]) {
-					case "aurelionsol":
-						$champions[i] = "Aurelion Sol";
-						break;
-					case "chogath":
-						$champions[i] = "Cho'Gath";
-						break;
-					case "drmundo":
-						$champions[i] = "Dr. Mundo";
-						break;
-					case "jarvaniv":
-						$champions[i] = "Jarvan IV";
-						break;
-					case "khazix":
-						$champions[i] = "Kha'Zix";
-						break;
-					case "kogmaw":
-						$champions[i] = "Kog'Maw";
-						break;
-					case "leesin":
-						$champions[i] = "Lee Sin";
-						break;
-					case "masteryi":
-						$champions[i] = "Master Yi";
-						break;
-					case "missfortune":
-						$champions[i] = "Miss Fortune";
-						break;
-					case "reksai":
-						$champions[i] = "Rek'Sai";
-						break;
-					case "aurelionsol":
-						$champions[i] = "Aurelion Sol";
-						break;
-					case "tahmkench":
-						$champions[i] = "Tahm Kench";
-						break;
-					case "twistedfate":
-						$champions[i] = "Twisted Fate";
-						break;
-					case "velkoz":
-						$champions[i] = "Vel'Koz";
-						break;
-					case "xinzhao":
-						$champions[i] = "Xin Zhao";
-						break;
-					default:
-						$placeholder = 1;
+				if ($champion[i] == "aurelionsol") {
+					$champions[i] = "Aurelion Sol";
+				}
+				elseif ($champion[i] == "chogath"){
+					$champions[i] = "Cho'Gath";
+				}
+				elseif ($champion[i] == "drmundo"){
+					$champions[i] = "Dr. Mundo";
+				}
+				elseif ($champion[i] == "jarvaniv"){
+					$champions[i] = "Jarvan IV";
+				}
+				elseif ($champion[i] == "khazix"){
+					$champions[i] = "Kha'Zix";
+				}
+				elseif ($champion[i] == "kogmaw"){
+					$champions[i] = "Kog'Maw";
+				}
+				elseif ($champion[i] == "leesin"){
+					$champions[i] = "Lee Sin";
+				}
+				elseif ($champion[i] == "masteryi"){
+					$champions[i] = "Master Yi";
+				}
+				elseif ($champion[i] == "missfortune"){
+					$champions[i] = "Miss Fortune";
+				}
+				elseif ($champion[i] == "reksai"){
+					$champions[i] = "Rek'Sai";
+				}
+				elseif ($champion[i] == "aurelionsol"){
+					$champions[i] = "Aurelion Sol";
+				}
+				elseif ($champion[i] == "tahmkench"){
+					$champions[i] = "Tahm Kench";
+				}
+				elseif ($champion[i] == "twistedfate")
+					$champions[i] = "Twisted Fate";
+				}
+				elseif ($champion[i] == "velkoz"){
+					$champions[i] = "Vel'Koz";
+				}
+				elseif ($champion[i] == "xinzhao"){
+					$champions[i] = "Xin Zhao";
+				}
+				else {
+					#nothing
 				}
 			}
 		?>
