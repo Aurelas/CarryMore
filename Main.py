@@ -1,37 +1,39 @@
-from RiotApi import RiotAPI
 from Gamestate import Gamestate
 from QLearningAgent import QLearningAgent
 import string
 import json
 import operator
 import random
+import sys
 
 
 def parse_champion_name(name):
-    new_name =name.translate(None,"'")
+    new_name = name.translate(None,"'")
     new_name = new_name.translate(None," ")
     return new_name.lower()
 
-
 def main():
-
+    #assign the champion, simulation number and user-choice to variables from the arg list
+    user_champ = sys.argv[1]
+    #sim_num = sys.argv[2]
+    #user_pick_choice = sys.argv[3]
     #Assuming that the user picks riven first for now
     #Updates the gamestate and everything before we run it through a loop
 
     ################################################################
     # THIS IS WHERE USER INPUT SHOULD GO
 
-    User_choice = parse_champion_name("""Miss Fortune""")
+    User_choice = parse_champion_name(user_champ)
     ################################################################
 
     # USER COULD CHOOSE NUMBER OF SIMULATIONS?
     #100000 simulations takes like 20 seconds to complete
     # 1mil simulations takes ~ 1 - 1.5mins This should be the limit
-    simulations = 100000
+    simulations = 100000 #sim_num
 
     game = Gamestate()
     #Depending on either True / False it swaps the reward function
-    User_choice_only = False
+    User_choice_only = True
     game.roles_picked[game.champion_roles[User_choice]] = True
     game.update_champions(User_choice)
     game.set_state(game.get_next_state())
@@ -89,10 +91,12 @@ def main():
     ################################################################
     # THIS OUTPUTS THE TOP 5 CHOICES FOR EACH AI (ROLE)
     ################################################################
+    print game.get_role_from_champion(user_champ), ",", user_champ,
     for i in game.ai:
-        t = sorted(i.qValues.iteritems(), key=lambda x: -x[1])[:5]
-        for x , y in t:
-            print game.get_role_from_champion(x),":", x,":", y
+        t = sorted(i.qValues.iteritems(), key=lambda x: -x[1])[:1]
+        for x,y in t:
+            print ",", game.get_role_from_champion(x),",", x, #,",", y
+    
 
 
 

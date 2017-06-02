@@ -1,0 +1,409 @@
+@import "grid.css";
+
+a 
+{
+  outline: none;
+  text-decoration: none;
+}
+
+body 
+{
+  margin: 0 0 0 0;
+}
+
+button {
+  font-family: 'Taviraj', serif;
+  background-color: transparent;
+  display:block;
+  margin:auto;
+  color: #888888;
+  outline: none;
+  border: 1px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 28px;
+  transition-duration: .45s;
+  cursor: pointer;
+}
+
+.buttonAdd:hover {
+  color: #3CB371;
+  transition-duration: .4s;
+}
+
+.buttonBanned:hover {
+  color: #EA4C44;
+  transition-duration: .4s;
+}
+
+h1 {
+  font-family: 'Taviraj', serif;
+  font-weight: 200;
+  font-size: 50px;
+  background-color: rgba(144, 109, 80, 1);
+  -webkit-box-shadow: 0px 20px 60px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 20px 60px 0px rgba(0,0,0,1);
+  box-shadow: 0px 20px 60px 0px rgba(0,0,0,1);
+  background: linear-gradient(rgba(147, 159, 92, 1), rgba(35, 32, 32, 1));
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  margin-top: 0px;
+  text-align: center;
+  color: #DDDDDD;
+}
+
+h3
+{
+  font-family: 'Taviraj', serif;
+  font-weight: 300;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  text-align: center;
+  color: rgba(144, 109, 80, 1);
+}
+
+h4
+{
+  font-family: 'Taviraj', serif;
+  font-size: 24px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: auto;
+  text-align: center;
+  color: #888888;
+}
+
+html
+{
+  background: rgba(35, 32, 32, 1);
+}
+
+input[type="submit"] 
+{
+  font-family: 'Taviraj', serif;
+  color: rgba(107, 116, 67, 1);
+  background: transparent;
+  margin: auto;
+  outline: none;
+  border: 0px;
+  padding: 2px 5px;
+  text-align: center;
+  display: block;
+  font-size: 40px;
+  transition-duration: .4s;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover
+{
+  font-family: 'Taviraj', serif;
+  color: rgba(135, 180, 75, 1);
+  border: 0px;
+  text-align: center;
+  display: block;
+  font-size: 40px;
+  transition-duration: .4s;
+  cursor: pointer;
+}
+
+input[type="text"]:focus 
+{
+  font-family: 'Taviraj', serif;
+  margin: auto;
+  background-color: transparent;
+  color: rgba(225, 170, 125, 1);
+  border: 0px;
+  outline: none;
+  padding: 2px 5px;
+  text-align: center;
+  display: block;
+  font-size: 32px;
+  font-weight: 100;
+  transition-duration: .4s;
+  cursor: pointer;
+}
+
+input[type="text"]
+{
+  font-family: 'Taviraj', serif;
+  margin: auto;
+  background-color: transparent;
+  color: rgba(147, 159, 92, 1);
+  border: 0px;
+  outline: none;
+  padding: 2px 5px;
+  text-align: center;
+  display: block;
+  font-size: 42px;
+  font-weight: 200;
+  transition-duration: .4s;
+  cursor: pointer;
+}
+
+input.box 
+{
+  font-family: 'Taviraj', serif;
+  display:block;
+  padding: 0px;
+  width: 300px;
+  height: 50px;
+  outline: none;
+  margin:auto;
+  background-color: transparent;
+  border-color: rgba(218, 215, 184, .5);
+  border-radius: 1px;
+  border-right-style: solid;
+  border-right-width: 150px;
+  border-left-style: solid;
+  border-left-width: 150px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition-duration: .7s;
+}
+
+p
+{
+  font-family: 'Taviraj', serif;
+  font-weight: 200;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 5px;
+  width: auto;
+  text-align: center;
+  color: rgba(239, 236, 202, 1);
+}
+
+select
+{
+  font-family: 'Taviraj', serif;
+  font-size: 18px;
+  background: transparent;
+  outline-color: rgba(20, 91, 95, 1);;
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  padding: 5px;
+  width: auto;
+  color: #808080;
+  margin-right: 5px;
+}
+
+/* Champion pictures */
+
+#champ1, #champ2, #champ3, #champ4, #champ5 {
+  height: 455px;
+  width: 250px;
+  display: block;
+  margin: 0 5 0 5;
+  padding: 0;
+  position: relative;
+  float: left;
+}
+
+.tileName {
+  width: 100%;
+  height: 50px;
+  font-weight: 300;
+  font-size: 28px;
+  color: rgba(147, 159, 92, 1);
+  background: rgba(0, 0, 0, .7);
+  position: absolute;
+  bottom: 50px;
+  text-align: center;
+  margin: 0px;
+  padding: 10px 0px 10px 0px;
+  animation: colorShift1 ease 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation: colorShift1 ease 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation: colorShift1 ease 1.5s;
+  -moz-animation-iteration-count: infinite;
+}
+
+.tileRole {
+  width: 100%;
+  height: 50px;
+  font-weight: 300;
+  font-size: 22px;
+  color: rgba(147, 159, 92, 1);
+  background: rgba(0, 0, 0, .7);
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  margin: 0px;
+  padding: 10px 0px 10px 0px;
+  animation: colorShift1 ease 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation: colorShift1 ease 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation: colorShift1 ease 1.5s;
+  -moz-animation-iteration-count: infinite;
+}
+
+.outer {
+  float: right;
+  position: relative;
+  left: -50%;
+}
+
+.inner {
+  position: relative;
+  left: 50%;  
+  margin: 0;
+  padding: 0;
+}
+/* color animations */
+
+@keyframes colorShift1{
+  0% {
+    color: rgba(147, 159, 92, 1);
+  }
+  33% {
+    color: rgba(147, 159, 92, 1);
+  }
+  66% {
+    color: rgba(225, 170, 125, 1);
+  }
+  100% {
+    color: rgba(225, 170, 125, 1);
+  }
+}
+/*fading animations */
+
+
+@keyframes fade2{
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+@-moz-keyframes fade2{
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+h3.fade1 {
+  opacity: 0;
+  margin-right: -20px;
+  margin-top: -20px;
+  animation: fade2 ease 7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation: fade2 ease 7s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation: fade2 ease 7s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-delay: 1.25s; /* Safari 4.0 - 8.0 */
+  animation-delay: 1.25s;
+}
+h3.fade2 {
+  opacity: 0;
+  margin-top: -35px;
+  margin-left: -320px;
+  animation: fade2 ease 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation: fade2 ease 5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation: fade2 ease 5s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-delay: .25s; /* Safari 4.0 - 8.0 */
+  animation-delay: .25s;
+}
+
+h3.fade3 {
+  opacity: 0;
+  margin-top: -23px;
+  margin-right: -150px;
+  animation: fade2 ease 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation: fade2 ease 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation: fade2 ease 4s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-delay: .75s; /* Safari 4.0 - 8.0 */
+  animation-delay: .75s;
+}
+
+h3.fade4 {
+  opacity: 0;
+  margin-top:-10px;
+  margin-right: -400px;
+  animation: fade2 ease 9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation: fade2 ease 9s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation: fade2 ease 9s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-delay: 1.5s; /* Safari 4.0 - 8.0 */
+  animation-delay: 1.5s;
+}
+
+h3.fade5 {
+  opacity: 0;
+  margin-top:-30px;
+  margin-left: -400px;
+  animation: fade2 ease 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation: fade2 ease 6s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation: fade2 ease 6s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-delay: 1.75s; /* Safari 4.0 - 8.0 */
+  animation-delay: 1.75s;
+}
+
